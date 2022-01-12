@@ -1,10 +1,68 @@
 {
-  "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
+	"hosting": {
+		"public": "public",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+		"redirects": [
+			{
+				"source": "/twitch",
+				"destination": "https://twitch.tv/clxxiii",
+				"type": 302
+			},
+			{
+				"source": "/cs1",
+				"destination": "https://cs.oswego.edu/~efereira/CS1WorkSite",
+				"type": 302
+			},
+			{
+				"source": "/discord",
+				"destination": "https://discord.gg/S9jxSmQkhF",
+				"type": 302
+			},
+			{
+				"source": "/beansshake",
+				"destination": "./beansshake/beansshake.mp4",
+				"type": 302
+			},
+			{
+				"source": "/twitter",
+				"destination": "https://twitter.com/clxxiii1",
+				"type": 302
+			},
+			{
+				"source": "/tournamenthistory",
+				"destination": "https://docs.google.com/spreadsheets/d/1mICRUyDWgeduveA1uatP7h6e8meDgYBwLZia4xj8qYc",
+				"type": 302
+			},
+			{
+				"source": "/youtube",
+				"destination": "https://www.youtube.com/channel/UCXZb0eiJaYgWIkQO_Ci3aJQ",
+				"type": 302
+			},
+			{
+				"source": "/osu",
+				"destination": "https://osu.ppy.sh/users/10962678",
+				"type": 302
+			},
+			{
+				"source": "/cdc",
+				"destination": "https://cdc.clxxiii.dev",
+				"type": 302
+			},
+			{
+				"source": "/twitchfollowing",
+				"destination": "https://www.twitchfollowing.com/?clxxiii",
+				"type": 302
+			},
+			{
+				"source": "/charts",
+				"destination": "https://drive.google.com/drive/u/0/folders/1qkX1t-2DFng7F_xKvVoXQPX0AO5oOrH3",
+				"type": 302
+			},
+			{
+				"source": "/scoresaber",
+				"destination": "https://scoresaber.com/u/76561198170151094",
+				"type": 302
+			}
+		]
+	}
 }

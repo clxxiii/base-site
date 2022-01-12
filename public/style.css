@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Nanum+Gothic&family=Poiret+One&family=Poppins:ital,wght@0,100;0,400;1,100;1,400&family=Roboto&family=Ubuntu:wght@500&family=Varela&family=Varela+Round&display=swap");
 * {
 	padding: 0;
 	margin: 0;
 }
 body {
-	font-family: "Nanum Gothic", sans-serif;
+	font-family: "Ubuntu", sans-serif;
 	color: white;
+	transform-style: preserve-3d;
 }
 
 .background,
@@ -19,6 +20,7 @@ body {
 	min-width: 1280px;
 	min-height: 720px;
 	background-color: #0d1111;
+	pointer-events: none;
 }
 
 .foreground {
@@ -34,12 +36,13 @@ body {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
+	transform-style: preserve-3d;
 }
 
 .card {
 	width: 400px;
 	height: 600px;
-	background-color: rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(10px);
 	border-radius: 25px;
 	padding: 10px;
@@ -53,20 +56,91 @@ body {
 	margin-bottom: 10px;
 }
 
-/* .card::before {
-	content: "flip for links";
+.arrow {
 	position: absolute;
 	margin: 0;
-	top: 0;
+	bottom: 0;
 	right: 0;
 	height: 50px;
-	width: 620px;
+	width: 420px;
 	text-align: center;
-	transform: rotate(-90deg) translateX(50px);
-	transform-origin: 100% 100%;
-	background: linear-gradient(
-		180deg,
-		rgba(0, 0, 0, 0) 75%,
-		rgba(255, 255, 255, 0.2) 100%
-	);
-} */
+	/* background-image: url("/img/arrow.svg"); */
+	background-size: 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: bounce 2s ease-in-out infinite;
+	transition: filter 0.3s ease-in-out;
+}
+
+.arrow img:hover {
+	filter: drop-shadow(0px 0px 10px white);
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.card .text {
+	text-align: center;
+}
+
+.cube {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	transform-origin: 50% 50%;
+	transform-style: preserve-3d;
+	transform: rotateY(30deg) rotateX(-10deg);
+	transition: 0.7s ease-in-out;
+	cursor: pointer;
+	/* animation: spin 3s linear infinite; */
+}
+
+.cube::before {
+	position: absolute;
+	content: "";
+	background-color: var(--color1);
+	width: 150px;
+	height: 150px;
+	transform-style: preserve-3d;
+	transform: rotateY(90deg) translateZ(-75px);
+}
+
+.cube:hover {
+	transform: rotateY(30deg) rotateX(-100deg);
+}
+
+.cube .face {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	transform-style: preserve-3d;
+	top: 0;
+	left: 0;
+	width: 150px;
+	/* border: solid 3px black; */
+	height: 150px;
+	background: linear-gradient(180deg, var(--color1) 0%, var(--color2) 100%);
+	transform: rotateX(calc(var(--i) * 90deg)) translateZ(75px);
+}
+
+.face img {
+	width: 125px;
+	height: 125px;
+}
+
+.links {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 100px;
+}
