@@ -8,3 +8,9 @@
 		grid-template-columns: auto auto;
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.content-wrapper {
+		transform: scale(0.5);
+	}
+}

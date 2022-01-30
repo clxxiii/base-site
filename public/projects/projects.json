@@ -1,7 +1,37 @@
 [
 	{
-		"name": "WIP",
-		"desc": "I hosted a tourney for osu!",
-		"icon_url": "./cup.png"
+		"name": "CLXXIII's Draft Cup",
+		"desc": "I hosted a tourney for osu! It lasted for about 3 months, taking up the majority of my winter break. I hand-made all of the graphics and sheets, and I made a custom website for it as well!",
+		"link": "https://cdc.clxxiii.dev",
+		"icon_url": "https://cdc.clxxiii.dev/src/icon.png",
+		"status": "Ongoing"
+	},
+	{
+		"name": "Clone Hero Charts",
+		"desc": "For 4 years now, I have been taking songs I like and making them playable on Clone Hero.",
+		"link": "https://clxxiii.dev/charts",
+		"icon_url": "/img/clxxiii_ch.png",
+		"status": "Ongoing"
+	},
+	{
+		"name": "Template",
+		"desc": "This is a template project!",
+		"link": "https://cdc.clxxiii.dev",
+		"icon_url": "https://clxxiii.dev/img/icon.png",
+		"status": "Template"
+	},
+	{
+		"name": "Template",
+		"desc": "This is a template project!",
+		"link": "https://cdc.clxxiii.dev",
+		"icon_url": "https://clxxiii.dev/img/icon.png",
+		"status": "Template"
+	},
+	{
+		"name": "Template",
+		"desc": "This is a template project!",
+		"link": "https://cdc.clxxiii.dev",
+		"icon_url": "https://clxxiii.dev/img/icon.png",
+		"status": "Template"
 	}
 ]
