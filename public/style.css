@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Nanum+Gothic&family=Poiret+One&family=Poppins:ital,wght@0,100;0,400;1,100;1,400&family=Roboto&family=Ubuntu:wght@500&family=Varela&family=Varela+Round&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -17,9 +18,12 @@ body {
 	left: 0;
 	height: 100vh;
 	width: 100vw;
-	min-width: 1280px;
-	min-height: 720px;
-	background-color: #0d1111;
+	background: rgb(3, 40, 33);
+	background: linear-gradient(
+		90deg,
+		rgba(3, 40, 33, 1) 0%,
+		rgba(4, 30, 46, 1) 100%
+	);
 	pointer-events: none;
 }
 
@@ -36,8 +40,6 @@ body {
 
 .content-wrapper {
 	display: flex;
-	min-width: 1280px;
-	min-height: 720px;
 	width: 100vw;
 	height: 100vh;
 	align-items: center;
@@ -45,12 +47,26 @@ body {
 	transform-style: preserve-3d;
 }
 
-.card {
+.project {
+	height: 150px;
 	width: 400px;
-	height: 600px;
-	background: rgba(255, 255, 255, 0.2);
+	font-size: 14px !important;
+}
+
+.project-wrapper {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 20px;
+}
+
+.card,
+.project {
+	background: rgba(255, 255, 255, 0.4);
 	backdrop-filter: blur(10px);
 	border-radius: 25px;
+	font-size: 20px;
+	border: solid 3px rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	padding: 10px;
 	overflow: hidden;
 	transform-style: preserve-3d;
@@ -66,24 +82,49 @@ body {
 	margin-bottom: 10px;
 }
 
-.arrow {
-	position: absolute;
-	margin: 0;
-	bottom: 0;
-	right: 0;
-	height: 50px;
-	width: 420px;
-	text-align: center;
-	/* background-image: url("/img/arrow.svg"); */
-	background-size: 50px;
-	background-position: center;
-	background-repeat: no-repeat;
-	animation: bounce 2s ease-in-out infinite;
-	transition: filter 0.3s ease-in-out;
+.button {
+	width: 100%;
+	border: 2px white solid;
+	border-radius: 20px;
+	transition: 0.3s ease-in-out;
 }
 
-.arrow img:hover {
-	filter: drop-shadow(0px 0px 10px white);
+.button:hover {
+	background-color: white;
+}
+
+.button a {
+	display: block;
+	width: 100%;
+	font-size: 48px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-align: center;
+	font-family: "Jura";
+	background-clip: border-box;
+	color: rgba(255, 255, 255, 1);
+	transition: 0.3s ease-in-out;
+	background: linear-gradient(
+		45deg,
+		rgba(238, 47, 235, 1) 20%,
+		rgba(255, 32, 184, 1) 40%,
+		rgba(170, 98, 235, 1) 50%,
+		rgba(61, 249, 249, 1) 70%
+	);
+	-webkit-background-clip: text;
+}
+
+.button a:hover {
+	color: rgba(255, 255, 255, 0);
+}
+
+.link-box {
+	display: flex;
+	height: 300px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 @keyframes bounce {

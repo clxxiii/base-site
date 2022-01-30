@@ -1,5 +1,4 @@
 particlesJS.load("particles-bottom", "/js/particles.json");
-particlesJS.load("particles-top", "/js/particles.json");
 
 // // Change position of card on mouse move
 // window.addEventListener("mousemove", (event) => {

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<head>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="stylex800.css" />
-	<link rel="icon" href="img/icon.png" />
+<head lang="en-US">
+	<link rel="stylesheet" href="/style.css" />
+	<link rel="stylesheet" href="/stylex800.css" />
+	<link rel="icon" href="/img/icon.png" />
 	<title>CLXXIII.dev</title>
 
 	<meta property="og:type" content="website" />
@@ -18,24 +18,12 @@
 </head>
 <body>
 	<div class="content-wrapper">
-		<div class="card" style="height: 500px; width: 400px">
-			<div class="text">
-				<h1>Hi</h1>
-				<p>I'm CLXXIII, I make things for the Internet.</p>
-			</div>
-			<div class="link-box">
-				<div class="button">
-					<a href="./links">Social Links</a>
-				</div>
-				<div class="button">
-					<a href="./projects">Projects</a>
-				</div>
-			</div>
-		</div>
+		<div class="project-wrapper" id="project-list"></div>
 	</div>
 	<div class="background">
 		<div id="particles-bottom"></div>
 	</div>
-	<script src="js/particles.js"></script>
-	<script src="js/index.js"></script>
+	<script src="/js/projectBuilder.js" onload="buildProjects()"></script>
+	<script src="/js/particles.js"></script>
+	<script src="/js/index.js"></script>
 </body>
