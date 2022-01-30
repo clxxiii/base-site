@@ -14,6 +14,13 @@
 		"status": "Ongoing"
 	},
 	{
+		"name": "Expand me! page",
+		"desc": "A short userscript that adds an \"expand\" button on a user's osu profile",
+		"link": "https://github.com/clxxiii/expand-me-page",
+		"icon_url": "/img/expandbutton.png",
+		"status": "Complete"
+	},
+	{
 		"name": "Stats for TETR.IO",
 		"desc": "A simple stream overlay for tetrio, an online stacker game, that shows rank information.",
 		"link": "https://tetriostats.clxxiii.dev",
