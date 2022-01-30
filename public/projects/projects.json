@@ -14,24 +14,39 @@
 		"status": "Ongoing"
 	},
 	{
-		"name": "Template",
-		"desc": "This is a template project!",
-		"link": "https://cdc.clxxiii.dev",
+		"name": "Stats for TETR.IO",
+		"desc": "A simple stream overlay for tetrio, an online stacker game, that shows rank information.",
+		"link": "https://tetriostats.clxxiii.dev",
 		"icon_url": "https://clxxiii.dev/img/icon.png",
-		"status": "Template"
+		"status": "Complete"
 	},
 	{
-		"name": "Template",
-		"desc": "This is a template project!",
-		"link": "https://cdc.clxxiii.dev",
-		"icon_url": "https://clxxiii.dev/img/icon.png",
-		"status": "Template"
+		"name": "CHINCHOO.XYZ",
+		"desc": "A website and redirect hub I made for twitch streamer, Chinchoo.",
+		"link": "https://chinchoo.xyz",
+		"icon_url": "https://chinchoo.xyz/src/logo.png",
+		"status": "Complete"
 	},
 	{
-		"name": "Template",
-		"desc": "This is a template project!",
-		"link": "https://cdc.clxxiii.dev",
+		"name": "2v2 Tuesday",
+		"desc": "A Stream overlay I made for chin's weekly tuesday streams, in which chat can sign up for quickfire, best of 5 2v2s",
+		"link": "https://clxxiii.dev",
+		"icon_url": "/img/chingradient.png",
+		"status": "Complete"
+	},
+
+	{
+		"name": "Discord Webhook Sender",
+		"desc": "I made this for a small community of friends, but I figured that other people could also get some use out of it",
+		"link": "https://webhookposter.clxxiii.dev",
 		"icon_url": "https://clxxiii.dev/img/icon.png",
-		"status": "Template"
+		"status": "Complete"
+	},
+	{
+		"name": "Team Sheet Template",
+		"desc": "The ultimate overkill team spreadsheet! If you want a sheet for your team that is loaded with features you will never need, you are in luck!",
+		"link": "https://docs.google.com/spreadsheets/d/1zrCrszu2yKcZ34X4AEcEcVVglfQexk9nb5QxDtFg1YQ/edit#gid=2049358991",
+		"icon_url": "https://clxxiii.dev/img/icon.png",
+		"status": "Mostly Complete"
 	}
 ]

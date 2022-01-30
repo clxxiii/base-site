@@ -7,7 +7,6 @@
 body {
 	font-family: "Nanum Gothic", sans-serif;
 	color: white;
-	transform-style: preserve-3d;
 }
 
 .background {
@@ -31,8 +30,8 @@ body {
 	position: fixed;
 	top: 10px;
 	left: 10px;
-	width: 50px;
-	height: 50px;
+	width: 75px;
+	height: 75px;
 	background: url("/img/arrow.svg");
 	z-index: 2;
 	transform: rotate(90deg);
@@ -63,9 +62,12 @@ body {
 }
 
 .content-wrapper {
+	position: relative;
 	display: flex;
 	width: 100vw;
 	height: 100vh;
+	overflow-x: hidden;
+	/* overflow-y: hidden; */
 	align-items: center;
 	justify-content: center;
 	transform-style: preserve-3d;
@@ -78,6 +80,7 @@ body {
 }
 
 .project-wrapper {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
