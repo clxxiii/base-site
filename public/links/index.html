@@ -15,73 +15,11 @@
 </head>
 <body>
 	<a href="/" class="arrow"></a>
-	<div class="content-wrapper">
-		<div class="links">
-			<div
-				class="cube"
-				style="--color1: rgb(149, 39, 223); --color2: rgb(112, 30, 167)"
-				onclick="redirect('/twitch')"
-			>
-				<div class="face" style="--i: 0">TWITCH</div>
-				<div class="face" style="--i: 1"><img src="/img/twitch.svg" /></div>
-				<div class="face" style="--i: 2">TWITCH</div>
-				<div class="face" style="--i: 3"></div>
-			</div>
-			<div
-				class="cube"
-				style="--color1: #636ff5; --color2: #5865f2"
-				onclick="redirect('/discord')"
-			>
-				<div class="face" style="--i: 0">DISCORD</div>
-				<div class="face" style="--i: 1"><img src="/img/discord.svg" /></div>
-				<div class="face" style="--i: 2">DISCORD</div>
-				<div class="face" style="--i: 3"></div>
-			</div>
-			<div
-				class="cube"
-				style="--color1: rgb(33, 191, 219); --color2: rgb(23, 136, 156)"
-				onclick="redirect('/twitter')"
-			>
-				<div class="face" style="--i: 0">TWITTER</div>
-				<div class="face" style="--i: 1"><img src="/img/twitter.svg" /></div>
-				<div class="face" style="--i: 2">TWITTER</div>
-				<div class="face" style="--i: 3"></div>
-			</div>
-			<div
-				class="cube"
-				style="--color1: rgb(230, 26, 26); --color2: rgb(160, 23, 23)"
-				onclick="redirect('/youtube')"
-			>
-				<div class="face" style="--i: 0">YOUTUBE</div>
-				<div class="face" style="--i: 1"><img src="/img/youtube.svg" /></div>
-				<div class="face" style="--i: 2">YOUTUBE</div>
-				<div class="face" style="--i: 3"></div>
-			</div>
-			<div
-				class="cube"
-				style="--color1: rgb(240, 90, 177); --color2: rgb(190, 73, 141)"
-				onclick="redirect('/osu')"
-			>
-				<div class="face" style="--i: 0">OSU!</div>
-				<div class="face" style="--i: 1"><img src="/img/osu.svg" /></div>
-				<div class="face" style="--i: 2">OSU!</div>
-				<div class="face" style="--i: 3"></div>
-			</div>
-			<div
-				class="cube"
-				style="--color1: #ffde18; --color2: #eabd01"
-				onclick="redirect('/scoresaber')"
-			>
-				<div class="face" style="--i: 0">SCORE<br />SABER</div>
-				<div class="face" style="--i: 1"><img src="/img/scoresaber.svg" /></div>
-				<div class="face" style="--i: 2">SCORE<br />SABER</div>
-				<div class="face" style="--i: 3"></div>
-			</div>
-		</div>
-	</div>
+	<div class="content-wrapper"><div class="links" id="links"></div></div>
 	<div class="background">
 		<div id="particles-bottom"></div>
 	</div>
 	<script src="/js/particles.js"></script>
+	<script src="/js/linkBoxBuilder.js" onload="buildLinkBoxes()"></script>
 	<script src="/js/index.js"></script>
 </body>
