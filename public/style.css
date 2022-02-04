@@ -61,6 +61,13 @@ body {
 	background: transparent;
 }
 
+.based-wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 1221px;
+	height: 599px;
+}
+
 .content-wrapper {
 	position: relative;
 	display: flex;
