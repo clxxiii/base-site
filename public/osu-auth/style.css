@@ -72,6 +72,10 @@ body {
 	transition: 0.2s ease-in-out;
 }
 
+button {
+	cursor: pointer;
+}
+
 #copy:hover::after {
 	filter: invert(0);
 }
@@ -82,7 +86,7 @@ body {
 	color: white;
 }
 
-button {
+#login {
 	width: 300px;
 	height: 50px;
 	font-size: 24px;
@@ -95,7 +99,7 @@ button {
 	transition: 0.2s ease-in-out;
 }
 
-button:hover {
+#login:hover {
 	transform: translateY(-1px);
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }

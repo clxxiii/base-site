@@ -2,9 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="icon" href="/img/icon.png" />
 		<link rel="stylesheet" href="style.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>osu! Account Linker</title>
 	</head>
 	<body onload="getKey()">
 		<div id="paste-box">
@@ -28,9 +29,10 @@
 				let login = document.createElement("button");
 
 				login.innerHTML = "Login with osu!";
+				login.id = "login";
 				login.onclick = () => {
 					window.location.href =
-						"https://osu.ppy.sh/oauth/authorize?client_id=13047&redirect_uri=http://127.0.0.1:3000&response_type=code&scope=identify";
+						"https://osu.ppy.sh/oauth/authorize?client_id=13047&redirect_uri=https://clxxiii-discord-bot-osu-auth.herokuapp.com/&response_type=code&scope=identify";
 				};
 
 				title.innerHTML = "Connect your osu! account to discord!";
