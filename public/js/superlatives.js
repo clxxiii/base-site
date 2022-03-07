@@ -1,4 +1,5 @@
 let superlatives = [
+	"A supporter of Ukraine",
 	"a CompSci Major",
 	"a Rollercoaster Enthusiast",
 	"Addicted to Rainbow 6",
