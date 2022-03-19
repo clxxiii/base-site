@@ -41,7 +41,7 @@ function sendData() {
 	let body = { name, email, text };
 	console.log(body);
 
-	fetch("https://formsubmit.co/ajax/earthnoartisjusteh@gmail.com", {
+	fetch("https://formsubmit.co/ajax/1100c5a9e5629a4299535637c75cedab", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
