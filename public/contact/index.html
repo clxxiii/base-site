@@ -14,12 +14,44 @@
             <div class="form">
                 <h1>Contact Me!</h1>
                 <div class="tag">Have a question? Want to tell me how your day went? Put it here!</div>
-                <input type="hidden" name="_template" value="box">
-                <input onkeyup="checkEmptiness()" type="text" class="form-field" placeholder="What should I call you?" id="name" required></input>
-                <input onkeyup="checkEmptiness()" type="text" class="form-field" placeholder="Email" id="email" required></input>
-                <textarea onkeyup="checkEmptiness()" class="form-field" placeholder="" id="text" required></textarea>
+                <input 
+                    type="hidden" 
+                    name="_template" 
+                    value="box">
+                </input>
+
+                <input 
+                    onkeyup="checkEmptiness()" 
+                    type="text" 
+                    class="form-field" 
+                    placeholder="What should I call you?" 
+                    id="name" 
+                    required>
+                </input>
+
+                <input 
+                    onkeyup="checkEmptiness()" 
+                    type="text" 
+                    class="form-field" 
+                    placeholder="Email" 
+                    id="email" 
+                    required>
+                </input>
+
+                <textarea 
+                    onkeyup="checkEmptiness()" 
+                    class="form-field" 
+                    placeholder="" 
+                    id="text" 
+                    required>
+                </textarea>
                 <div class="tip">TIP: You can use Ctrl + Enter to send</div>
-                <button onclick="sendData()" class="unfilled" id="send">Please fill all fields</button>
+                <button 
+                    onclick="sendData()" 
+                    class="unfilled" 
+                    id="send">
+                    Please fill all fields
+                </button>
             </div>
         </div>
         <div class="background">
