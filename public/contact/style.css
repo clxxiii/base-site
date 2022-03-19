@@ -1,0 +1,131 @@
+.form {
+	display: grid;
+	background: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(10px);
+	border-radius: 25px;
+	font-size: 20px;
+	border: solid 3px rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	overflow: hidden;
+	transform-style: preserve-3d;
+	justify-items: center;
+	backdrop-filter: blur(5px);
+	gap: 5px;
+}
+.form h1 {
+	grid-row: 1;
+	grid-column: 1 / 3;
+}
+
+.tag {
+	grid-row: 2;
+	width: 390px;
+	font-size: 16px;
+	text-align: center;
+	grid-column: 1 / 3;
+}
+
+::placeholder {
+	color: rgb(240, 240, 240);
+}
+
+.form-field {
+	background-color: transparent;
+	border: 3px solid white;
+	padding: 3px;
+	color: white;
+	transition: 0.3s ease-in-out;
+	font-family: "Varela";
+}
+
+.form-field:focus {
+	outline: 0;
+	border: 3px solid yellow;
+}
+
+.unfilled {
+	border: 3px solid rgba(255, 255, 255, 0.4) !important;
+	color: rgba(0, 0, 0, 0.5);
+	background-color: transparent;
+}
+
+.pressed {
+	transform: scale(0.95);
+	filter: opacity(0.75);
+}
+
+.sent {
+	width: 75px !important;
+	background-color: rgb(116, 238, 116);
+	color: white;
+	animation: 2s confirmSpin ease-in-out;
+}
+
+#name,
+#email {
+	grid-row: 3;
+	width: 175px;
+}
+
+#text {
+	width: 370px;
+	height: 200px;
+	grid-row: 4;
+	resize: none;
+	overflow: hidden;
+	grid-column: 1 / 3;
+}
+
+.tip {
+	font-size: 12px;
+	grid-column: 1 / 3;
+	margin-top: 10px;
+	grid-row: 5;
+}
+
+#send {
+	width: 380px;
+	border: 0;
+	border-radius: 50px;
+	font-weight: bold;
+	height: 50px;
+	font-size: 24px;
+	font-family: "Poppins";
+	grid-column: 1 / 3;
+	grid-row: 6;
+	transition: 0.3s ease-in-out;
+}
+
+@keyframes confirmSpin {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-10deg);
+	}
+	75% {
+		transform: rotate(370deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: translateX(0px);
+	}
+	25% {
+		transform: translateX(7px);
+	}
+	50% {
+		transform: translateX(-7px);
+	}
+	75% {
+		transform: translateX(7px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
