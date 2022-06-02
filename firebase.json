@@ -14,8 +14,13 @@
 				"type": 302
 			},
 			{
+				"source": "/github",
+				"destination": "https://github.com/clxxiii",
+				"type": 302
+			},
+			{
 				"source": "/discord",
-				"destination": "https://discord.gg/S9jxSmQkhF",
+				"destination": "https://discord.gg/R45D93e2fU",
 				"type": 302
 			},
 			{

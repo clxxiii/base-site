@@ -36,6 +36,15 @@
 		"image": "/img/youtube.svg"
 	},
 	{
+		"text": "GITHUB",
+		"link": "/github",
+		"colors": {
+			"1": "#181717",
+			"2": "#0d1117"
+		},
+		"image": "/img/github.svg"
+	},
+	{
 		"text": "OSU!",
 		"link": "/osu",
 		"colors": {
@@ -43,14 +52,5 @@
 			"2": "rgb(190, 73, 141)"
 		},
 		"image": "/img/osu.svg"
-	},
-	{
-		"text": "SCORE<br />SABER",
-		"link": "/scoresaber",
-		"colors": {
-			"1": "#ffde18",
-			"2": "#eabd01"
-		},
-		"image": "/img/scoresaber.svg"
 	}
 ]
