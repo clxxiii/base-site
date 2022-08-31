@@ -9,9 +9,7 @@
 	});
 </script>
 
-<section id="home">
-	<canvas bind:this={el} />
-</section>
+<canvas bind:this={el} />
 
 <style>
 	canvas {

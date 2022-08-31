@@ -20,35 +20,39 @@ const camera = new THREE.PerspectiveCamera(
 
 // C
 const loader = new SVGLoader();
-const svgData = await loader.loadAsync(logo.default);
+
 const svgGroup = new THREE.Group();
+const loadSvg = async () => {
+	const svgData = await loader.loadAsync(logo.default);
 
-// const image = new THREE.TextureLoader().load(url.default);
-const material = new THREE.MeshStandardMaterial({
-	color: 0xffffff,
-	// map: image,
-});
-
-svgData.paths.forEach((path) => {
-	const shapes = path.toShapes(true);
-
-	shapes.forEach((shape) => {
-		const geometry = new THREE.ExtrudeGeometry(shape, {
-			depth: 5,
-			bevelEnabled: false,
-		});
-
-		const mesh = new THREE.Mesh(geometry, material);
-
-		svgGroup.add(mesh);
+	// const image = new THREE.TextureLoader().load(url.default);
+	const material = new THREE.MeshStandardMaterial({
+		color: 0xffffff,
+		// map: image,
 	});
-});
-// These numbers are half the svg dimensions,
-// I don't know how to get that from the group itself.
-svgGroup.translateX(-20);
-svgGroup.translateY(-20);
-svgGroup.translateZ(-5);
-scene.add(svgGroup);
+
+	svgData.paths.forEach((path) => {
+		const shapes = path.toShapes(true);
+
+		shapes.forEach((shape) => {
+			const geometry = new THREE.ExtrudeGeometry(shape, {
+				depth: 5,
+				bevelEnabled: false,
+			});
+
+			const mesh = new THREE.Mesh(geometry, material);
+
+			svgGroup.add(mesh);
+		});
+	});
+	// These numbers are half the svg dimensions,
+	// I don't know how to get that from the group itself.
+	svgGroup.translateX(-20);
+	svgGroup.translateY(-20);
+	svgGroup.translateZ(-5);
+	scene.add(svgGroup);
+};
+loadSvg();
 
 // // Baseplate
 // const baseplate = new THREE.CylinderGeometry(7, 7, 1, 64);
