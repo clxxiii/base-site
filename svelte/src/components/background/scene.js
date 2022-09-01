@@ -1,8 +1,6 @@
 import * as THREE from "three";
 import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader";
-// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import * as logo from "../../assets/logo test.svg";
-// import * as url from "../assets/texture.png";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -54,14 +52,6 @@ const loadSvg = async () => {
 };
 loadSvg();
 
-// // Baseplate
-// const baseplate = new THREE.CylinderGeometry(7, 7, 1, 64);
-// const baseplateMaterial = new THREE.MeshStandardMaterial({ color: 0x666666 });
-// const baseplateMesh = new THREE.Mesh(baseplate, baseplateMaterial);
-// baseplateMesh.position.y = -5;
-
-// scene.add(baseplateMesh);
-
 // Dots
 function addStar() {
 	const geometry = new THREE.SphereGeometry(0.25, 24, 24);
@@ -110,36 +100,38 @@ camera.rotation.z = camAngles.z;
 /* Boilerplate */
 let renderer;
 
+let mouseYFactor = 0;
+let mouseXFactor = 0;
 const mouseMove = (event) => {
 	let panFactor = 5;
 	let { clientX, clientY } = event;
 
-	let xFactor =
+	mouseXFactor =
 		((window.innerWidth / 2 - clientX) / (window.innerWidth / 2)) *
 		panFactor;
-	let yFactor =
+	mouseYFactor =
 		((window.innerHeight / 2 - clientY) / (window.innerHeight / 2)) *
 		panFactor;
 
 	// Trig!
 	let rotX;
 	let rotY;
-	if (xFactor >= 0) {
-		rotX = Math.atan(camCoords.z / xFactor) - Math.PI / 2;
+	if (mouseXFactor >= 0) {
+		rotX = Math.atan(camCoords.z / mouseXFactor) - Math.PI / 2;
 	} else {
-		rotX = Math.atan(camCoords.z / xFactor) + Math.PI / 2;
+		rotX = Math.atan(camCoords.z / mouseXFactor) + Math.PI / 2;
 	}
 
-	if (yFactor >= 0) {
-		rotY = Math.atan(camCoords.z / yFactor) - Math.PI / 2;
+	if (mouseYFactor >= 0) {
+		rotY = Math.atan(camCoords.z / mouseYFactor) - Math.PI / 2;
 	} else {
-		rotY = Math.atan(camCoords.z / yFactor) + Math.PI / 2;
+		rotY = Math.atan(camCoords.z / mouseYFactor) + Math.PI / 2;
 	}
 
-	camera.position.x = camCoords.x + -xFactor;
+	camera.position.x = camCoords.x + -mouseXFactor;
 	camera.rotation.y = camAngles.y + rotX;
 
-	camera.position.y = camCoords.y + yFactor;
+	camera.position.y = camDepth + camCoords.y + mouseYFactor;
 	camera.rotation.x = camAngles.x + rotY;
 };
 
@@ -157,7 +149,9 @@ const resize = () => {
 	camera.updateProjectionMatrix();
 };
 
+let camDepth;
 const scroll = () => {
+	camDepth = window.scrollY / 150;
 	let maxBlur = 2;
 	let firstPageFactor =
 		window.scrollY / window.innerHeight > 1
@@ -170,7 +164,8 @@ const scroll = () => {
 	})`;
 	renderer.domElement.style.transform = `scale(${1 + firstPageFactor / 10})`;
 
-	svgGroup.position.y = -20 + window.scrollY / 10;
+	svgGroup.position.z = -5 + window.scrollY / 10;
+	camera.position.y = camDepth + camCoords.y + mouseYFactor;
 };
 
 export const createScene = (el) => {
@@ -179,8 +174,6 @@ export const createScene = (el) => {
 		antialias: true,
 		alpha: true,
 	});
-	// const controls = new OrbitControls(camera, renderer.domElement);
-	// controls.update();
 	renderer.setClearColor(0xffffff, 0);
 	resize();
 	animate();

@@ -4,7 +4,9 @@
 
 <div>
 	<Link href="#home">Home</Link>
-	<Link href="#quick-test">Quick Test</Link>
+	<Link href="#about-me">About Me</Link>
+	<Link href="#projects">Projects</Link>
+	<Link href="#contact">Contact</Link>
 </div>
 
 <style>
@@ -16,6 +18,7 @@
 		height: 75px;
 		margin: 0;
 		padding: 0;
+		z-index: 5;
 		background: rgba(0, 0, 0, 0.5);
 		backdrop-filter: blur(10px);
 		display: flex;

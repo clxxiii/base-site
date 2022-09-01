@@ -1,0 +1,65 @@
+[
+	{
+		"name": "Yagami",
+		"desc": "I'm currently working on a bot to replace the role of referees in blitz tournaments.",
+		"link": "https://cdc.clxxiii.dev",
+		"icon_url": "https://yagami.clxxiii.dev/static/yagami%20var.png",
+		"status": "Ongoing"
+	},
+	{
+		"name": "CLXXIII's Draft Cup",
+		"desc": "I hosted a tourney for osu! It lasted for about 3 months, taking up the majority of my winter break. I hand-made all of the graphics and sheets, and I made a custom website for it as well!",
+		"link": "https://cdc.clxxiii.dev",
+		"icon_url": "https://cdc.clxxiii.dev/src/icon.png",
+		"status": "Complete"
+	},
+	{
+		"name": "Clone Hero Charts",
+		"desc": "For 4 years now, I have been taking songs I like and making them playable on Clone Hero.",
+		"link": "https://clxxiii.dev/charts",
+		"icon_url": "./clxxiii_ch.png",
+		"status": "Ongoing"
+	},
+	{
+		"name": "Expand me! page",
+		"desc": "A short userscript that adds an \"expand\" button on a user's osu profile",
+		"link": "https://github.com/clxxiii/expand-me-page",
+		"icon_url": "./expandbutton.png",
+		"status": "Complete"
+	},
+	{
+		"name": "Stats for TETR.IO",
+		"desc": "A simple stream overlay for tetrio, an online stacker game, that shows rank information.",
+		"link": "https://tetriostats.clxxiii.dev",
+		"icon_url": "https://clxxiii.dev/img/icon.png",
+		"status": "Complete"
+	},
+	{
+		"name": "CHINCHOO.XYZ",
+		"desc": "A website and redirect hub I made for twitch streamer, Chinchoo.",
+		"link": "https://chinchoo.xyz",
+		"icon_url": "https://chinchoo.xyz/src/logo.png",
+		"status": "Complete"
+	},
+	{
+		"name": "2v2 Tuesday",
+		"desc": "A Stream overlay I made for chin's weekly tuesday streams, in which chat can sign up for quickfire, best of 5 2v2s",
+		"link": "https://chinchoo.xyz/2v2Tuesday",
+		"icon_url": "./chingradient.png",
+		"status": "Complete"
+	},
+	{
+		"name": "Discord Webhook Sender",
+		"desc": "I made this for a small community of friends, but I figured that other people could also get some use out of it",
+		"link": "https://webhookposter.clxxiii.dev",
+		"icon_url": "https://clxxiii.dev/img/icon.png",
+		"status": "Complete"
+	},
+	{
+		"name": "Team Sheet Template",
+		"desc": "The ultimate overkill team spreadsheet! If you want a sheet for your team that is loaded with features you will never need, you are in luck!",
+		"link": "https://docs.google.com/spreadsheets/d/1zrCrszu2yKcZ34X4AEcEcVVglfQexk9nb5QxDtFg1YQ/edit#gid=2049358991",
+		"icon_url": "https://clxxiii.dev/img/icon.png",
+		"status": "Mostly Complete"
+	}
+]
