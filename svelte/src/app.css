@@ -24,6 +24,11 @@
   src: url(./assets/fonts/Jura.ttf);
 }
 
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+
 
 html {
   scroll-behavior: smooth;

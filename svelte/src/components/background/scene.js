@@ -127,7 +127,6 @@ const mouseMove = (event) => {
 	} else {
 		rotY = Math.atan(camCoords.z / mouseYFactor) + Math.PI / 2;
 	}
-
 	camera.position.x = camCoords.x + -mouseXFactor;
 	camera.rotation.y = camAngles.y + rotX;
 
@@ -149,7 +148,7 @@ const resize = () => {
 	camera.updateProjectionMatrix();
 };
 
-let camDepth;
+let camDepth = 0;
 const scroll = () => {
 	camDepth = window.scrollY / 150;
 	let maxBlur = 2;

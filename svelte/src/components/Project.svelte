@@ -64,7 +64,7 @@
 	}
 
 	.card:hover {
-		box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+		box-shadow: 0 0 20px rgba(150, 150, 150, 0.5);
 		background: rgba(255, 255, 255, 0.1);
 	}
 </style>

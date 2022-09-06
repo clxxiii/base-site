@@ -31,4 +31,10 @@
 		width: 100%;
 		left: 0;
 	}
+
+	@media only screen and (max-width: 600px) {
+		a {
+			font-size: 1em;
+		}
+	}
 </style>

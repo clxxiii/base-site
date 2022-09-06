@@ -1,0 +1,56 @@
+[
+	{
+		"text": "TWITCH",
+		"link": "/twitch",
+		"colors": {
+			"1": "rgb(149, 39, 223)",
+			"2": "rgb(112, 30, 167)"
+		},
+		"image": "/img/twitch.svg"
+	},
+	{
+		"text": "DISCORD",
+		"link": "/discord",
+		"colors": {
+			"1": "#636ff5",
+			"2": "#5865f2"
+		},
+		"image": "/img/discord.svg"
+	},
+	{
+		"text": "TWITTER",
+		"link": "/twitter",
+		"colors": {
+			"1": "rgb(33, 191, 219)",
+			"2": "rgb(23, 136, 156)"
+		},
+		"image": "/img/twitter.svg"
+	},
+	{
+		"text": "YOUTUBE",
+		"link": "/youtube",
+		"colors": {
+			"1": "rgb(230, 26, 26)",
+			"2": "rgb(160, 23, 23)"
+		},
+		"image": "/img/youtube.svg"
+	},
+	{
+		"text": "GITHUB",
+		"link": "/github",
+		"colors": {
+			"1": "#181717",
+			"2": "#0d1117"
+		},
+		"image": "/img/github.svg"
+	},
+	{
+		"text": "OSU!",
+		"link": "/osu",
+		"colors": {
+			"1": "rgb(240, 90, 177)",
+			"2": "rgb(190, 73, 141)"
+		},
+		"image": "/img/osu.svg"
+	}
+]

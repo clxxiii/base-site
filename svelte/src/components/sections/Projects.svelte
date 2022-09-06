@@ -28,4 +28,16 @@
 		align-items: center;
 		gap: 20px;
 	}
+
+	@media only screen and (max-width: 600px) {
+		h1 {
+			font-size: 1em;
+			margin: 0;
+		}
+		.projects {
+			margin: 0;
+			max-width: 600px;
+			scale: 0.8;
+		}
+	}
 </style>

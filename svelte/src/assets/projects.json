@@ -17,14 +17,14 @@
 		"name": "Clone Hero Charts",
 		"desc": "For 4 years now, I have been taking songs I like and making them playable on Clone Hero.",
 		"link": "https://clxxiii.dev/charts",
-		"icon_url": "./clxxiii_ch.png",
+		"icon_url": "./img/clxxiii_ch.png",
 		"status": "Ongoing"
 	},
 	{
 		"name": "Expand me! page",
 		"desc": "A short userscript that adds an \"expand\" button on a user's osu profile",
 		"link": "https://github.com/clxxiii/expand-me-page",
-		"icon_url": "./expandbutton.png",
+		"icon_url": "./img/expandbutton.png",
 		"status": "Complete"
 	},
 	{
@@ -45,7 +45,7 @@
 		"name": "2v2 Tuesday",
 		"desc": "A Stream overlay I made for chin's weekly tuesday streams, in which chat can sign up for quickfire, best of 5 2v2s",
 		"link": "https://chinchoo.xyz/2v2Tuesday",
-		"icon_url": "./chingradient.png",
+		"icon_url": "./img/chingradient.png",
 		"status": "Complete"
 	},
 	{
