@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/old/img/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/old/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="form">
+            <h1>Contact Me!</h1>
+            <div class="tag">Have a question? Want to tell me how your day went? Put it here!</div>
+            <input type="hidden" name="_template" value="box">
+            </input>
+
+            <input onkeyup="checkEmptiness()" type="text" class="form-field" placeholder="What should I call you?"
+                id="name" required>
+            </input>
+
+            <input onkeyup="checkEmptiness()" type="text" class="form-field" placeholder="Email" id="email" required>
+            </input>
+
+            <textarea onkeyup="checkEmptiness()" class="form-field" placeholder="" id="text" required>
+                </textarea>
+            <div class="tip">TIP: You can use Ctrl + Enter to send</div>
+            <button onclick="sendData()" class="unfilled" id="send">
+                Please fill all fields
+            </button>
+        </div>
+    </div>
+    <div class="background">
+        <div id="particles-bottom"></div>
+    </div>
+    <script src="index.js"></script>
+    <script src="/old/js/particles.js"></script>
+    <script src="/old/js/index.js"></script>
+    </div>
+</body>
+
+</html>
