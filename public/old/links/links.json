@@ -6,7 +6,7 @@
 			"1": "rgb(149, 39, 223)",
 			"2": "rgb(112, 30, 167)"
 		},
-		"image": "/img/twitch.svg"
+		"image": "/old/img/twitch.svg"
 	},
 	{
 		"text": "DISCORD",
@@ -15,7 +15,7 @@
 			"1": "#636ff5",
 			"2": "#5865f2"
 		},
-		"image": "/img/discord.svg"
+		"image": "/old/img/discord.svg"
 	},
 	{
 		"text": "TWITTER",
@@ -24,7 +24,7 @@
 			"1": "rgb(33, 191, 219)",
 			"2": "rgb(23, 136, 156)"
 		},
-		"image": "/img/twitter.svg"
+		"image": "/old/img/twitter.svg"
 	},
 	{
 		"text": "YOUTUBE",
@@ -33,7 +33,7 @@
 			"1": "rgb(230, 26, 26)",
 			"2": "rgb(160, 23, 23)"
 		},
-		"image": "/img/youtube.svg"
+		"image": "/old/img/youtube.svg"
 	},
 	{
 		"text": "GITHUB",
@@ -42,7 +42,7 @@
 			"1": "#181717",
 			"2": "#0d1117"
 		},
-		"image": "/img/github.svg"
+		"image": "/old/img/github.svg"
 	},
 	{
 		"text": "OSU!",
@@ -51,6 +51,6 @@
 			"1": "rgb(240, 90, 177)",
 			"2": "rgb(190, 73, 141)"
 		},
-		"image": "/img/osu.svg"
+		"image": "/old/img/osu.svg"
 	}
 ]

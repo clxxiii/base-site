@@ -4,6 +4,7 @@
 	padding: 0;
 	margin: 0;
 }
+
 body {
 	font-family: "Nanum Gothic", sans-serif;
 	color: white;
@@ -17,11 +18,9 @@ body {
 	height: 100vh;
 	width: 100vw;
 	background: rgb(70, 70, 6);
-	background: linear-gradient(
-		0deg,
-		rgba(70, 70, 6, 1) 25%,
-		rgba(9, 47, 78, 1) 75%
-	);
+	background: linear-gradient(0deg,
+			rgba(70, 70, 6, 1) 25%,
+			rgba(9, 47, 78, 1) 75%);
 	/* background: rgb(3, 40, 33);
 	background: linear-gradient(
 		90deg,
@@ -55,7 +54,7 @@ body {
 	left: 10px;
 	width: 75px;
 	height: 75px;
-	background: url("/img/arrow.svg");
+	background: url("/old/img/arrow.svg");
 	z-index: 2;
 	transform: rotate(90deg);
 	animation: jump 3s ease-in-out infinite;
@@ -65,9 +64,11 @@ body {
 	0% {
 		transform: rotate(90deg) translateY(10px);
 	}
+
 	50% {
 		transform: rotate(90deg) translateY(0px);
 	}
+
 	100% {
 		transform: rotate(90deg) translateY(10px);
 	}
@@ -173,12 +174,10 @@ body {
 		rgba(61, 249, 249, 1) 70%
 	); */
 	background: rgb(255, 255, 29);
-	background: linear-gradient(
-		45deg,
-		rgba(255, 255, 29, 1) 0%,
-		rgba(244, 35, 234, 1) 50%,
-		rgba(44, 231, 255, 1) 100%
-	);
+	background: linear-gradient(45deg,
+			rgba(255, 255, 29, 1) 0%,
+			rgba(244, 35, 234, 1) 50%,
+			rgba(44, 231, 255, 1) 100%);
 	-webkit-background-clip: text;
 }
 
@@ -198,9 +197,11 @@ body {
 	0% {
 		transform: translateY(0px);
 	}
+
 	50% {
 		transform: translateY(-10px);
 	}
+
 	100% {
 		transform: translateY(0px);
 	}
