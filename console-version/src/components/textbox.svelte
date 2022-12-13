@@ -1,7 +1,7 @@
 <script lang="ts">
   let bootEl;
   let logo;
-  fetch("./boot.txt").then(x =>
+  fetch("./console/boot.txt").then(x =>
     x.text().then(fakeBoot)
    )
 
@@ -9,7 +9,7 @@
       // Get loading bar stages
       let load: string[] = ( await 
         (
-          await fetch("./loadstages.txt")
+          await fetch("./console/loadstages.txt")
           )
         .text()
         )
@@ -87,6 +87,7 @@
   }
   .wrap {
     position: relative;
+    max-width: 800px;
     aspect-ratio: calc(16/9);
     font-family: "Jetbrains Mono NF";
     width: 100%;
