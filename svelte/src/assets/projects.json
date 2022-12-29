@@ -61,5 +61,12 @@
 		"link": "https://docs.google.com/spreadsheets/d/1zrCrszu2yKcZ34X4AEcEcVVglfQexk9nb5QxDtFg1YQ/edit#gid=2049358991",
 		"icon_url": "https://clxxiii.dev/img/icon.png",
 		"status": "Mostly Complete"
+	},
+	{
+		"name": "Stream Speed Benchmark",
+		"desc": "Another stream speed tester with a nice visual",
+		"link": "https://stream.clxxiii.dev",
+		"icon_url": "https://i.imgur.com/qsxNHnk.png",
+		"status": "Mostly Complete"
 	}
 ]
