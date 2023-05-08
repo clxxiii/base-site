@@ -1,4 +1,5 @@
 <script>
+	import { navigating } from "$app/stores";
 	import "../app.css";
 	import Background from "$lib/components/background/Background.svelte";
 	import Header from "$lib/components/header/Header.svelte";
@@ -9,7 +10,7 @@
 
 <section id="home" />
 <Header />
-<Background />
+<Background renderLogo moveOnScroll/>
 <main>
 	<AboutMe />
 	<Projects />

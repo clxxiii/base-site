@@ -13,7 +13,6 @@ import {
 } from 'three';
 
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader';
-// import logo from './logo.svg';
 
 const scene = new Scene();
 const camera = new PerspectiveCamera(75, 16 / 9, 0.1, 150);
@@ -27,35 +26,31 @@ const camera = new PerspectiveCamera(75, 16 / 9, 0.1, 150);
 const loader = new SVGLoader();
 
 const svgGroup = new Group();
-const loadSvg = async () => {
-	// loader.load('logo.svg', (data) => {
-	// 	console.log('Loaded!');
-	// });
-	// const svgData = await loader.loadAsync('https://clxxiii.dev/assets/logo%20test.c213fe7f.svg');
-	// 	// const image = new TextureLoader().load(url.default);
-	// 	const material = new MeshStandardMaterial({
-	// 		color: 0xffffff
-	// 		// map: image,
-	// 	});
-	// 	svgData.paths.forEach((path) => {
-	// 		const shapes = path.toShapes(true);
-	// 		shapes.forEach((shape) => {
-	// 			const geometry = new ExtrudeGeometry(shape, {
-	// 				depth: 5,
-	// 				bevelEnabled: false
-	// 			});
-	// 			const mesh = new Mesh(geometry, material);
-	// 			svgGroup.add(mesh);
-	// 		});
-	// 	});
-	// 	// These numbers are half the svg dimensions,
-	// 	// I don't know how to get that from the group itself.
-	// 	svgGroup.translateX(-20);
-	// 	svgGroup.translateY(-20);
-	// 	svgGroup.translateZ(-5);
-	// 	scene.add(svgGroup);
+export const loadSvg = async (content: string) => {
+	const svgData = loader.parse(content);
+	// const image = new TextureLoader().load(url.default);
+	const material = new MeshStandardMaterial({
+		color: 0xffffff
+		// map: image,
+	});
+	svgData.paths.forEach((path) => {
+		const shapes = path.toShapes(true);
+		shapes.forEach((shape) => {
+			const geometry = new ExtrudeGeometry(shape, {
+				depth: 5,
+				bevelEnabled: false
+			});
+			const mesh = new Mesh(geometry, material);
+			svgGroup.add(mesh);
+		});
+	});
+	// These numbers are half the svg dimensions,
+	// I don't know how to get that from the group itself.
+	svgGroup.translateX(-20);
+	svgGroup.translateY(-20);
+	svgGroup.translateZ(-5);
+	scene.add(svgGroup);
 };
-loadSvg();
 
 // Dots
 function addStar() {
@@ -83,6 +78,12 @@ Array(500).fill(0).forEach(addStar);
 {
 	const light = new PointLight(0xfffffff, 0.75, 100);
 	light.position.set(10, 10, 5);
+	scene.add(light);
+}
+
+{
+	const light = new PointLight(0xfffffff, 0.75, 100);
+	light.position.set(0, 0, 10);
 	scene.add(light);
 }
 
