@@ -9,7 +9,8 @@ import {
 	PointLight,
 	WebGLRenderer,
 	MathUtils,
-	MeshBasicMaterial
+	MeshBasicMaterial,
+	Vector3
 } from 'three';
 
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader';
@@ -46,9 +47,7 @@ export const loadSvg = async (content: string) => {
 	});
 	// These numbers are half the svg dimensions,
 	// I don't know how to get that from the group itself.
-	svgGroup.translateX(-20);
-	svgGroup.translateY(-20);
-	svgGroup.translateZ(-5);
+	svgGroup.position.set(-20, -20, -5);
 	scene.add(svgGroup);
 };
 

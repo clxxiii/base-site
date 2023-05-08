@@ -5,8 +5,6 @@
 
 </script>
 
-<Background dark />
-<Header />
 <div class="card">
 	<Card>
 		<h1>Archived</h1>

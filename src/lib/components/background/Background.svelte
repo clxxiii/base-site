@@ -33,6 +33,7 @@
 
 <canvas bind:this={canvas}></canvas>
 
+<!-- This svg is used to render the svg in the 3D scene -->
 <div class="svg">
 	<svg bind:this={svg} width="100%" height="100%" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 			<g transform="matrix(0.380598,0,0,0.380598,-2.98379,22.8736)">
@@ -51,6 +52,8 @@
 	canvas {
 		position: fixed;
 		inset: 0;
+		min-width: 100vw;
+		min-height: 100vh;
 		margin: 0;
 		padding: 0;
 		z-index: -1;

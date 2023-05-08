@@ -1,11 +1,9 @@
 <script>
-	import {blur} from "svelte/transition";
-	import "../app.css";
 	import Background from "$lib/components/background/Background.svelte";
+  import "./app.css"
+	import {blur} from "svelte/transition";
+  import {page} from "$app/stores"
 	import Header from "$lib/components/header/Header.svelte";
-	import AboutMe from "$lib/components/sections/AboutMe.svelte";
-	import Projects from "$lib/components/sections/Projects.svelte";
-	import Contact from "$lib/components/sections/Contact.svelte";
 
 	let loading = true;
 	const loadingOff = () => loading = false
@@ -17,13 +15,18 @@
 		Loading...	
 	</div>
 {/if}
-<section id="home" />
-<Header />
-<Background renderLogo moveOnScroll loaded={loadingOff}/>
+<!-- Check if on main page or not -->
+{#if $page.route.id == "/(main)"}
+  <Background renderLogo moveOnScroll loaded={loadingOff}/>
+{:else}
+  <Background dark loaded={loadingOff}/>
+{/if}
+
+<header>
+  <Header />
+</header>
 <main>
-	<AboutMe />
-	<Projects />
-	<Contact />
+  <slot />
 </main>
 
 <style>
@@ -39,17 +42,5 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
-	section {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100vh;
-	}
-	main {
-		position: absolute;
-		top: 100vh;
-		width: 100%;
-		left: 0;
 	}
 </style>
