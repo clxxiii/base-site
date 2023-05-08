@@ -1,0 +1,58 @@
+[
+  {
+    "path": "twitch",
+    "dest": "https://twitch.tv/clxxiii"
+  },
+  {
+    "path": "cs1",
+    "dest": "https://cs.oswego.edu/~efereira/CS1WorkSite"
+  },
+  {
+    "path": "github",
+    "dest": "https://github.com/clxxiii"
+  },
+  {
+    "path": "discord",
+    "dest": "https://discord.gg/R45D93e2fU"
+  },
+  {
+    "path": "beansshake",
+    "dest": "./beansshake/beansshake.mp4"
+  },
+  {
+    "path": "twitter",
+    "dest": "https://twitter.com/clxxiii1"
+  },
+  {
+    "path": "tournamenthistory",
+    "dest": "https://docs.google.com/spreadsheets/d/1mICRUyDWgeduveA1uatP7h6e8meDgYBwLZia4xj8qYc"
+  },
+  {
+    "path": "youtube",
+    "dest": "https://www.youtube.com/channel/UCXZb0eiJaYgWIkQO_Ci3aJQ"
+  },
+  {
+    "path": "osu",
+    "dest": "https://osu.ppy.sh/users/10962678"
+  },
+  {
+    "path": "cdc",
+    "dest": "https://cdc.clxxiii.dev"
+  },
+  {
+    "path": "twitchfollowing",
+    "dest": "https://www.twitchfollowing.com/?clxxiii"
+  },
+  {
+    "path": "charts",
+    "dest": "https://drive.google.com/drive/u/0/folders/1qkX1t-2DFng7F_xKvVoXQPX0AO5oOrH3"
+  },
+  {
+    "path": "scoresaber",
+    "dest": "https://scoresaber.com/u/76561198170151094"
+  },
+  {
+    "path": "based",
+    "dest": "/based/v2"
+  }
+]
