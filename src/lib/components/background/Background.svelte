@@ -15,6 +15,8 @@
 		browser && window.addEventListener("resize", resize)
 		renderLogo && loadSvg(svg.outerHTML)
 		createScene(canvas)
+		scroll()
+		
 		
 		loaded && loaded();
 	})
