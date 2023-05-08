@@ -3,10 +3,10 @@
 </script>
 
 <div>
-	<Link href="#home">Home</Link>
-	<Link href="#about-me">About Me</Link>
-	<Link href="#projects">Projects</Link>
-	<Link href="#contact">Contact</Link>
+	<Link href="/#home">Home</Link>
+	<Link href="/#about-me">About Me</Link>
+	<Link href="/#projects">Projects</Link>
+	<Link href="/#contact">Contact</Link>
 </div>
 
 <style>

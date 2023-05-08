@@ -2,20 +2,29 @@
 	export let renderLogo = false;
 	export let moveOnScroll = false;
 	export let loaded: (() => any) | null = null;
+	export let dark = false;
+
 	import { onMount } from "svelte";
 	import {createScene, loadSvg, mouseMove, resize, scroll} from "./scene"
 	import { browser } from "$app/environment";
 	let canvas: HTMLCanvasElement;
 	let svg: SVGElement;
 
+	
 	onMount(() => {
+		if (dark) {
+			canvas.style.filter = `blur(2px) brightness(${2/3})`;
+			canvas.style.transform = "scale(1.1)"
+		}
 		
 		browser && window.addEventListener("mousemove", mouseMove)
 		browser && moveOnScroll && window.addEventListener("scroll", scroll)
 		browser && window.addEventListener("resize", resize)
 		renderLogo && loadSvg(svg.outerHTML)
 		createScene(canvas)
-		scroll()
+		if (!dark) {
+			scroll()
+		}
 		
 		
 		loaded && loaded();
