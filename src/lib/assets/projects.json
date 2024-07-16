@@ -1,10 +1,17 @@
 [
 	{
+		"name": "osu!Rankdle",
+		"desc": "osu! Rankdle is a website, inspired by rankdle, but adapted for osu! Try and guess as many ranks in a row without losing all your HP!",
+		"link": "https://rankdle.clxxiii.dev",
+		"icon_url": "https://raw.githubusercontent.com/clxxiii/osu-rankdle/main/static/favicon.png",
+		"status": "Complete"
+	},
+	{
 		"name": "Yagami",
 		"desc": "I'm currently working on a bot to replace the role of referees in blitz tournaments.",
 		"link": "https://yagami.clxxiii.dev",
-		"icon_url": "https://yagami.clxxiii.dev/icons/logo.png",
-		"status": "Ongoing"
+		"icon_url": "https://avatars.githubusercontent.com/u/145930312",
+		"status": "Retired"
 	},
 	{
 		"name": "CLXXIII's Draft Cup",
@@ -25,13 +32,6 @@
 		"desc": "A short userscript that adds an \"expand\" button on a user's osu profile",
 		"link": "https://github.com/clxxiii/expand-me-page",
 		"icon_url": "./img/expandbutton.png",
-		"status": "Complete"
-	},
-	{
-		"name": "Stats for TETR.IO",
-		"desc": "A simple stream overlay for tetrio, an online stacker game, that shows rank information.",
-		"link": "https://tetriostats.clxxiii.dev",
-		"icon_url": "https://clxxiii.dev/img/icon.png",
 		"status": "Complete"
 	},
 	{
