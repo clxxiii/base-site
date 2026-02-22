@@ -1,43 +1,43 @@
 {
-	"name": "kit",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"test": "playwright test",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test:unit": "vitest",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@playwright/test": "^1.58.2",
-		"@sveltejs/adapter-auto": "^2.1.1",
-		"@sveltejs/kit": "^1.30.4",
-		"@types/mime-types": "^2.1.4",
-		"@types/three": "^0.152.1",
-		"@typescript-eslint/eslint-plugin": "^5.62.0",
-		"@typescript-eslint/parser": "^5.62.0",
-		"eslint": "^8.57.1",
-		"eslint-config-prettier": "^8.10.2",
-		"eslint-plugin-svelte": "^2.46.1",
-		"prettier": "^2.8.8",
-		"prettier-plugin-svelte": "^2.10.1",
-		"svelte": "^3.59.2",
-		"svelte-check": "^3.8.6",
-		"tslib": "^2.8.1",
-		"typescript": "^5.9.3",
-		"vite": "^4.5.14",
-		"vitest": "^0.25.8"
-	},
-	"type": "module",
-	"dependencies": {
-		"mime-types": "^2.1.35",
-		"svelte-cubed": "^0.2.1",
-		"three": "^0.152.2",
-		"typed.js": "^2.1.0"
-	}
+  "name": "kit",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "playwright test",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "test:unit": "vitest",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@sveltejs/kit": "^1.30.4",
+    "@sveltejs/adapter-auto": "^7.0.1",
+    "@types/mime-types": "^2.1.4",
+    "@types/three": "^0.152.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^8.10.2",
+    "eslint-plugin-svelte": "^2.46.1",
+    "prettier": "^2.8.8",
+    "prettier-plugin-svelte": "^2.10.1",
+    "svelte": "^3.59.2",
+    "svelte-check": "^3.8.6",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3",
+    "vite": "^4.5.14",
+    "vitest": "^0.25.8"
+  },
+  "type": "module",
+  "dependencies": {
+    "mime-types": "^2.1.35",
+    "svelte-cubed": "^0.2.1",
+    "three": "^0.152.2",
+    "typed.js": "^2.1.0"
+  }
 }
