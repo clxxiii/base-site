@@ -1,8 +1,10 @@
-import { CDN_ENDPOINT, IMGSERVER_SECRET, STORAGE_ENDPOINT, STORAGE_NAME, STORAGE_PASSWORD } from "$env/static/private";
+import { env } from "$env/dynamic/private";
 import {extension} from "mime-types"
 import { error } from "@sveltejs/kit";
 import {randomBytes} from "crypto";
 import type { RequestHandler } from "./$types";
+
+const { CDN_ENDPOINT, IMGSERVER_SECRET, STORAGE_ENDPOINT, STORAGE_NAME, STORAGE_PASSWORD } = env;
 
 export const POST: RequestHandler = async ({ request }) => {
 
